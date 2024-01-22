@@ -1,0 +1,19 @@
+<!DOCTYP html>
+<html>
+  <head>
+    <title>Careers Website With Flask</title>
+  </head>
+  <body>
+    <h1>Jovian Careers</h1>
+    <img src = "https://60145979-25a4-4414-9887-8509457f84aa-00-26d2i4matfddy.picard.replit.dev/static/banner.jpg" height = "320">"
+    <h2>About Jovian</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse interdum consectetur libero id faucibus. Egestas sed sed risus pretium. Ultrices dui sapien eget mi proin. Quis blandit turpis cursus in. Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Placerat duis ultricies lacus sed turpis. Nibh sed pulvinar proin gravida hendrerit lectus. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Varius morbi enim nunc faucibus a pellentesque sit. 
+    </p>
+    <h2>Open positions</h2>
+    {% for job in jobs %}
+      {% include 'jobitem.html' %}
+    {% endfor %}
+    <button>Contact us</button>
+  </body>
+</html>
